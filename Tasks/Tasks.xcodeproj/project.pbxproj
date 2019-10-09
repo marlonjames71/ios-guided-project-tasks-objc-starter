@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37030D02234E419500BBDB67 /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = 37030D01234E419500BBDB67 /* LSITask.m */; };
+		37030D06234E55F600BBDB67 /* LSITaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37030D05234E55F600BBDB67 /* LSITaskController.m */; };
+		37030D09234E652B00BBDB67 /* NSArray+SentenceGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 37030D08234E652B00BBDB67 /* NSArray+SentenceGeneration.m */; };
 		BD08F328234E3AF800771883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F327234E3AF800771883 /* AppDelegate.m */; };
 		BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F32A234E3AF800771883 /* SceneDelegate.m */; };
 		BD08F333234E3AF900771883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD08F332234E3AF900771883 /* Assets.xcassets */; };
@@ -29,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37030D00234E419500BBDB67 /* LSITask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITask.h; sourceTree = "<group>"; };
+		37030D01234E419500BBDB67 /* LSITask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITask.m; sourceTree = "<group>"; };
+		37030D04234E55F600BBDB67 /* LSITaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITaskController.h; sourceTree = "<group>"; };
+		37030D05234E55F600BBDB67 /* LSITaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITaskController.m; sourceTree = "<group>"; };
+		37030D07234E652B00BBDB67 /* NSArray+SentenceGeneration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SentenceGeneration.h"; sourceTree = "<group>"; };
+		37030D08234E652B00BBDB67 /* NSArray+SentenceGeneration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SentenceGeneration.m"; sourceTree = "<group>"; };
 		BD08F323234E3AF800771883 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD08F326234E3AF800771883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD08F327234E3AF800771883 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +75,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37030CFD234E410200BBDB67 /* Task-TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BD08F350234E3B3000771883 /* LSITasksTableViewController.h */,
+				BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */,
+			);
+			path = "Task-TableView";
+			sourceTree = "<group>";
+		};
+		37030CFE234E414500BBDB67 /* Task-Model */ = {
+			isa = PBXGroup;
+			children = (
+				37030D00234E419500BBDB67 /* LSITask.h */,
+				37030D01234E419500BBDB67 /* LSITask.m */,
+				37030D07234E652B00BBDB67 /* NSArray+SentenceGeneration.h */,
+				37030D08234E652B00BBDB67 /* NSArray+SentenceGeneration.m */,
+			);
+			path = "Task-Model";
+			sourceTree = "<group>";
+		};
+		37030CFF234E415000BBDB67 /* Task-Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BD08F34E234E3B3000771883 /* LSITaskDetailViewController.h */,
+				BD08F34D234E3B2F00771883 /* LSITaskDetailViewController.m */,
+			);
+			path = "Task-Detail";
+			sourceTree = "<group>";
+		};
+		37030D03234E55D400BBDB67 /* Task-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37030D04234E55F600BBDB67 /* LSITaskController.h */,
+				37030D05234E55F600BBDB67 /* LSITaskController.m */,
+			);
+			path = "Task-Controller";
+			sourceTree = "<group>";
+		};
 		BD08F31A234E3AF800771883 = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +134,14 @@
 		BD08F325234E3AF800771883 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				37030D03234E55D400BBDB67 /* Task-Controller */,
+				37030CFE234E414500BBDB67 /* Task-Model */,
+				37030CFD234E410200BBDB67 /* Task-TableView */,
+				37030CFF234E415000BBDB67 /* Task-Detail */,
 				BD08F326234E3AF800771883 /* AppDelegate.h */,
 				BD08F327234E3AF800771883 /* AppDelegate.m */,
 				BD08F329234E3AF800771883 /* SceneDelegate.h */,
 				BD08F32A234E3AF800771883 /* SceneDelegate.m */,
-				BD08F34E234E3B3000771883 /* LSITaskDetailViewController.h */,
-				BD08F34D234E3B2F00771883 /* LSITaskDetailViewController.m */,
-				BD08F350234E3B3000771883 /* LSITasksTableViewController.h */,
-				BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */,
 				BD08F353234E3B3900771883 /* Main.storyboard */,
 				BD08F332234E3AF900771883 /* Assets.xcassets */,
 				BD08F334234E3AF900771883 /* LaunchScreen.storyboard */,
@@ -157,6 +204,7 @@
 		BD08F31B234E3AF800771883 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Lambda, Inc";
 				TargetAttributes = {
@@ -213,9 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37030D06234E55F600BBDB67 /* LSITaskController.m in Sources */,
 				BD08F328234E3AF800771883 /* AppDelegate.m in Sources */,
 				BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */,
+				37030D09234E652B00BBDB67 /* NSArray+SentenceGeneration.m in Sources */,
 				BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */,
+				37030D02234E419500BBDB67 /* LSITask.m in Sources */,
 				BD08F339234E3AF900771883 /* main.m in Sources */,
 				BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */,
 			);
@@ -301,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -353,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -366,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCRLD36TZ6;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = Tasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCRLD36TZ6;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = Tasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,9 +451,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCRLD36TZ6;
+				DEVELOPMENT_TEAM = D6VB3396MT;
 				INFOPLIST_FILE = TasksTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,9 +471,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LCRLD36TZ6;
+				DEVELOPMENT_TEAM = D6VB3396MT;
 				INFOPLIST_FILE = TasksTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
